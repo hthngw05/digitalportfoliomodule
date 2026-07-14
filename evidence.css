@@ -1,0 +1,165 @@
+.evidence-note {
+  margin-top: 45px;
+}
+
+.evidence-block {
+  margin-top: 80px;
+  padding-top: 65px;
+  border-top: 1px solid var(--line);
+}
+
+.evidence-heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 35px;
+}
+
+.evidence-heading h2 {
+  max-width: 760px;
+  margin: 10px 0 14px;
+  font: 600 clamp(2.7rem, 5vw, 4.8rem) / 0.95 var(--serif);
+}
+
+.evidence-heading p {
+  max-width: 650px;
+  color: #62595c;
+}
+
+.download-link {
+  flex: 0 0 auto;
+  padding: 14px 18px;
+  color: #fff;
+  background: var(--plum);
+  text-decoration: none;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.download-link:hover {
+  background: var(--mauve);
+}
+
+.evidence-summary {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin: 42px 0;
+}
+
+.evidence-summary div {
+  padding: 24px;
+  border: 1px solid rgba(36, 31, 32, 0.3);
+  background: var(--paper);
+}
+
+.evidence-summary h3,
+.table-title {
+  margin: 0 0 10px;
+  font: 600 1.45rem var(--serif);
+}
+
+.evidence-summary p {
+  margin: 0;
+  color: #62595c;
+  font-size: 0.85rem;
+}
+
+.table-title {
+  margin: 42px 0 14px;
+}
+
+.table-scroll {
+  overflow-x: auto;
+}
+
+.competency-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  font-size: 0.8rem;
+}
+
+.competency-table th,
+.competency-table td {
+  padding: 14px;
+  border: 1px solid rgba(36, 31, 32, 0.42);
+  text-align: left;
+  vertical-align: top;
+}
+
+.competency-table th {
+  background: #e9e5df;
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.competency-table th:nth-child(1) {
+  width: 20%;
+}
+.competency-table th:nth-child(2) {
+  width: 17%;
+}
+.competency-table th:nth-child(3) {
+  width: 30%;
+}
+.action-table th:nth-child(1) {
+  width: 20%;
+}
+.action-table th:nth-child(2),
+.action-table th:nth-child(3) {
+  width: 40%;
+}
+
+.outlook-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 45px;
+  margin-top: 90px;
+  padding: 45px;
+  border: 1px solid var(--line);
+  background: var(--paper);
+}
+
+.outlook-link h2 {
+  margin: 12px 0;
+  font: 600 clamp(2.5rem, 5vw, 4rem) / 0.95 var(--serif);
+}
+
+.outlook-link p:not(.page-kicker) {
+  max-width: 720px;
+  color: #62595c;
+}
+
+.outlook-link > a {
+  color: var(--plum);
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+@media (max-width: 800px) {
+  .evidence-heading,
+  .outlook-link {
+    display: block;
+  }
+
+  .download-link {
+    display: inline-block;
+    margin-top: 18px;
+  }
+
+  .evidence-summary {
+    grid-template-columns: 1fr;
+  }
+
+  .competency-table {
+    min-width: 760px;
+  }
+
+  .outlook-link > a {
+    display: inline-block;
+    margin-top: 20px;
+  }
+}

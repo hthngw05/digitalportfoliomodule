@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>MRP Analysis | Ho Tran Hoai Thuong</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,600&family=DM+Sans:wght@400;500;600;700&family=Caveat:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <a class="mark" href="index.html">HT</a><button class="menu">menu</button>
+      <nav>
+        <a href="index.html">Home</a><a href="about.html">About</a
+        ><a class="active" href="work.html">Work</a
+        ><a href="evidence.html">Evidence</a><a href="training.html">Training</a
+        ><a href="reflection.html">Reflection</a>
+      </nav>
+    </header>
+    <main class="page">
+      <section class="case-head">
+        <div>
+          <p class="page-kicker">Project 01 — analytics • in progress</p>
+          <h1 class="case-title">Making MRP<br /><i>easier to read.</i></h1>
+        </div>
+        <div class="case-meta">
+          <div><b>Role</b>Data analysis &amp; visualisation</div>
+          <div><b>Tools</b>Excel, SAP data, Tableau planning</div>
+          <div><b>OJT connection</b>Dashboard creation</div>
+        </div>
+      </section>
+      <section class="case-body">
+        <div>
+          <h2>The context</h2>
+          <p>
+            Material Requirements Planning data contains dated demand, supply,
+            stock and procurement elements. When these records are presented
+            vertically across many materials, planners may need considerable
+            effort to trace what is required on each date and determine the next
+            action.
+          </p>
+          <h2>The challenge</h2>
+          <p>
+            The dataset contained missing values, multiple MRP element types and
+            business fields whose meanings could not be safely inferred from
+            their labels. The available extract also did not contain every value
+            required for a complete planning calculation.
+          </p>
+        </div>
+        <div>
+          <h2>My contribution</h2>
+          <ul>
+            <li>Explored 7,550 records covering 420 materials.</li>
+            <li>
+              Identified eight MRP element types and parent-component
+              relationships.
+            </li>
+            <li>Restructured dated records into a horizontal overview.</li>
+            <li>
+              Clarified that the Date field represented the required date.
+            </li>
+            <li>
+              Considered future Tableau visualisation, action identification and
+              automation.
+            </li>
+          </ul>
+          <h2>Use of the output</h2>
+          <p>
+            The proposed structure provides a clearer foundation for reviewing
+            demand by date. It can later support planning dashboards and
+            automated explanations once the business rules and source fields
+            have been fully validated.
+          </p>
+        </div>
+      </section>
+      <section class="process-art">
+        <div class="process">
+          <div>
+            <b>Understand</b><span>Clarify fields and business meaning</span>
+          </div>
+          <div><b>Prepare</b><span>Clean and classify MRP records</span></div>
+          <div>
+            <b>Restructure</b><span>Arrange demand and supply by date</span>
+          </div>
+          <div>
+            <b>Communicate</b><span>Present actions in a clearer view</span>
+          </div>
+        </div>
+      </section>
+      <section class="learning">
+        <h2>What changed<br />in my thinking?</h2>
+        <p>
+          I learned that reliable analytics depends on business definitions and
+          data lineage, not only formulas. When a field was unclear, I separated
+          confirmed meanings from assumptions and asked for clarification. A
+          visually complete dashboard would be misleading if the underlying
+          planning logic had not been verified.
+        </p>
+      </section>
+      <a class="next-project" href="project-mes.html"
+        ><span>Next case study</span><span>Traveller digitalisation →</span></a
+      >
+    </main>
+    <footer>
+      <span>Confidentiality-safe case study</span><span>01 / 03</span>
+    </footer>
+  </body>
+</html>

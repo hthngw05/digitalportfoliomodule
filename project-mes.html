@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Traveller Digitalisation | Ho Tran Hoai Thuong</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,600&family=DM+Sans:wght@400;500;600;700&family=Caveat:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <a class="mark" href="index.html">HT</a><button class="menu">menu</button>
+      <nav>
+        <a href="index.html">Home</a><a href="about.html">About</a
+        ><a class="active" href="work.html">Work</a
+        ><a href="evidence.html">Evidence</a><a href="training.html">Training</a
+        ><a href="reflection.html">Reflection</a>
+      </nav>
+    </header>
+    <main class="page">
+      <section class="case-head">
+        <div>
+          <p class="page-kicker">Project 02 — automation • prototype</p>
+          <h1 class="case-title">From paper<br /><i>to traceable data.</i></h1>
+        </div>
+        <div class="case-meta">
+          <div><b>Role</b>Process study &amp; OCR testing</div>
+          <div><b>Tools</b>Odoo, UiPath, OCR, Excel/JSON</div>
+          <div><b>OJT connection</b>MES UAT &amp; documentation</div>
+        </div>
+      </section>
+      <section class="case-body">
+        <div>
+          <h2>The context</h2>
+          <p>
+            Physical production travellers capture job details, serial numbers,
+            operation steps, completion dates, signatures and operator stamps.
+            This information is important for manufacturing traceability but can
+            be difficult to transfer reliably into a digital system.
+          </p>
+          <h2>The challenge</h2>
+          <p>
+            Scanned travellers contain printed tables, handwriting, corrections
+            and curved blue stamps. OCR may recognise individual characters
+            without preserving the document structure or understanding which
+            value belongs to which operation.
+          </p>
+        </div>
+        <div>
+          <h2>My contribution</h2>
+          <ul>
+            <li>Studied Odoo manufacturing and MES workflows.</li>
+            <li>
+              Mapped traveller fields to a structured production-import format.
+            </li>
+            <li>Tested extraction using UiPath OCR.</li>
+            <li>Compared operator-name and numeric stamp-ID recognition.</li>
+            <li>
+              Proposed using Stamp ID after it produced more consistent results.
+            </li>
+          </ul>
+          <h2>Use of the output</h2>
+          <p>
+            A validated workflow could reduce repetitive data entry and improve
+            traceability. Human verification remains necessary for uncertain
+            handwriting, overwritten values and document exceptions.
+          </p>
+        </div>
+      </section>
+      <section class="process-art">
+        <div class="process">
+          <div><b>Capture</b><span>Receive scanned traveller pages</span></div>
+          <div>
+            <b>Extract</b><span>Detect fields, operations and stamps</span>
+          </div>
+          <div>
+            <b>Validate</b><span>Flag uncertain or conflicting values</span>
+          </div>
+          <div>
+            <b>Structure</b><span>Prepare approved MES import fields</span>
+          </div>
+        </div>
+      </section>
+      <section class="learning">
+        <h2>Corrective<br />action</h2>
+        <p>
+          Operator-name OCR failed on curved stamps and produced garbled text.
+          Instead of continuing to optimise an unreliable output, I tested the
+          numeric stamp ID. Because the ID was recognised more consistently, I
+          selected it as the official identifier and proposed mapping it to an
+          authorised operator list later. This taught me to prioritise
+          measurable reliability over complexity.
+        </p>
+      </section>
+      <a class="next-project" href="project-xray.html"
+        ><span>Next case study</span><span>X-ray inspection research →</span></a
+      >
+    </main>
+    <footer>
+      <span>Confidentiality-safe case study</span><span>02 / 03</span>
+    </footer>
+  </body>
+</html>
